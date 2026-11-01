@@ -199,6 +199,31 @@ header {
     transform: scale(1.06);
 }
 
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    border: 1px solid var(--primary);
+    border-radius: 50px;
+    background: linear-gradient(135deg, #101D38, #101D38);
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    box-shadow: var(--glow-blue);
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: var(--primary);
+    color: var(--bg);
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px var(--primary),
+                0 0 35px rgba(56, 189, 248, 0.45);
+}
+
 /* SERVICES */
 .services {
     padding: 70px 8%;
