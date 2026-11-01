@@ -602,6 +602,21 @@ footer p {
     font-size: 13px;
 }
 
+
+/* ANIMATIONS */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
 
