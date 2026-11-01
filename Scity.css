@@ -224,22 +224,41 @@ header {
                 0 0 35px rgba(56, 189, 248, 0.45);
 }
 
+/
 /* SERVICES */
+
 .services {
-    padding: 70px 8%;
+    padding: 95px 8%;
     text-align: center;
+    background:
+        radial-gradient(circle at 50% 0%, rgba(37, 99, 235, 0.08), transparent 50%),
+        var(--bg);
 }
 
 .services h2,
 .statistics h2,
 .contact h2 {
-    color: #073b35;
-    font-size: 35px;
-    margin-bottom: 15px;
+    color: var(--white);
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+.services h2::after,
+.statistics h2::after,
+.contact h2::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 3px;
+    margin: 15px auto;
+    background: var(--primary);
+    border-radius: 10px;
+    box-shadow: 0 0 15px var(--primary);
 }
 
 .subtitle {
-    color: #777;
+    color: var(--text);
     margin-bottom: 40px;
 }
 
@@ -247,37 +266,55 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 28px;
 }
 
 .service-card {
-    background-color: white;
     width: 240px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 3px 12px #ddd;
-    transition: 0.3s;
+    padding: 18px;
+    background: linear-gradient(145deg, #101D38, #060B18);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+    overflow: hidden;
 }
 
 .service-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-12px);
+    border-color: var(--primary);
+    box-shadow: var(--glow-blue), 0 15px 35px rgba(0, 0, 0, 0.3);
 }
 
 .service-card img {
     width: 100%;
-    height: 160px;
+    height: 165px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 12px;
+    filter: brightness(0.85);
+    transition: var(--transition);
+}
+
+.service-card:hover img {
+    filter: brightness(1.1);
+    transform: scale(1.03);
 }
 
 .service-card h3 {
-    color: #073b35;
+    color: var(--primary);
+    font-size: 20px;
     margin: 20px 0 12px;
+    transition: var(--transition);
+}
+
+.service-card:hover h3 {
+    text-shadow: 0 0 12px var(--primary);
 }
 
 .service-card p {
-    color: #777;
-    line-height: 1.6;
+    color: var(--text);
+    line-height: 1.8;
+    font-size: 14px;
 }
 
 /* TRANSPORT */
