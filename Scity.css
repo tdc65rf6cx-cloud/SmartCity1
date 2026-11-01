@@ -573,16 +573,20 @@ header {
 
 
 /* FOOTER */
+
 footer {
-    background-color: #073b35;
-    color: white;
+    padding: 45px 20px 25px;
     text-align: center;
-    padding: 30px;
+    color: var(--text);
+    background: #060B18;
+    border-top: 1px solid var(--border);
 }
 
 footer h3 {
-    color: #39d98a;
+    color: var(--primary);
+    font-size: 26px;
     margin-bottom: 15px;
+    text-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
 }
 
 footer p {
@@ -590,9 +594,12 @@ footer p {
 }
 
 .copyright {
-    border-top: 1px solid #45645f;
+    max-width: 900px;
+    margin: 20px auto 0;
     padding-top: 20px;
-    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    color: #AABBD4;
+    font-size: 13px;
 }
 
 /* RESPONSIVE */
