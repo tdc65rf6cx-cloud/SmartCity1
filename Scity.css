@@ -65,6 +65,74 @@ img {
     background: linear-gradient(var(--primary), var(--secondary));
     border-radius: 20px;
 }
+/* HEADER */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 20px 8%;
+    background: rgba(6, 11, 24, 0.88);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 800;
+    text-shadow: 0 0 15px rgba(56, 189, 248, 0.25);
+}
+
+.navbar h1 span {
+    color: var(--primary);
+    text-shadow: 0 0 18px var(--primary);
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #AABBD4;
+    font-size: 14px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.navbar ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    box-shadow: 0 0 10px var(--primary);
+    transition: var(--transition);
+}
+
+.navbar ul li a:hover {
+    color: var(--primary);
+    text-shadow: 0 0 12px var(--primary);
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
 
 /* HOME */
 .hero {
