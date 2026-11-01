@@ -419,24 +419,35 @@ header {
     transform: scale(1.06);
 
 
+
 /* ABOUT */
+
 .about {
-    padding: 80px 15%;
+    position: relative;
+    padding: 95px 15%;
     text-align: center;
-    background-color: #073b35;
-    color: white;
+    background:
+        radial-gradient(ellipse at 50% 0%, rgba(56, 189, 248, 0.15), transparent 55%),
+        linear-gradient(135deg, #101D38, #060B18);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 .about h2 {
-    font-size: 35px;
+    color: var(--green);
+    font-size: 37px;
     margin-bottom: 25px;
-    color: #39d98a;
+    text-shadow: 0 0 18px rgba(56, 189, 248, 0.35);
 }
 
 .about p {
-    line-height: 1.9;
-    font-size: 17px;
+    max-width: 950px;
+    margin: auto;
+    color: #AABBD4;
+    line-height: 2;
+    font-size: 16px;
 }
+
 
 /* STATISTICS */
 .statistics {
