@@ -494,54 +494,83 @@ header {
     font-size: 14px;
 }
 
+
 /* CONTACT */
+
 .contact {
-    padding: 70px 10%;
+    padding: 90px 10%;
     text-align: center;
-    background-color: #e7f5ee;
+    background:
+        radial-gradient(circle at 50% 100%, rgba(56, 189, 248, 0.1), transparent 45%),
+        #101D38;
 }
 
 .contact p {
-    color: #666;
-    margin-bottom: 30px;
+    color: var(--text);
+    margin: 20px auto 35px;
 }
 
 .contact form {
-    max-width: 550px;
+    max-width: 570px;
     margin: auto;
+    padding: 30px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 17px;
+    background: rgba(16, 29, 56, 0.85);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: var(--glow-blue);
 }
 
 .contact input,
 .contact textarea {
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 100%;
+    padding: 16px;
+    background: #060B18;
+    border: 1px solid #263B61;
+    border-radius: 10px;
+    color: var(--white);
+    font-size: 14px;
     outline: none;
-    font-size: 15px;
+    transition: var(--transition);
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+    color: #AABBD4;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
 }
 
 .contact textarea {
-    height: 130px;
-    resize: none;
+    height: 140px;
+    resize: vertical;
 }
 
 .contact button {
-    background-color: #073b35;
-    color: white;
-    border: none;
     padding: 15px;
-    border-radius: 5px;
+    border: 1px solid var(--primary);
+    border-radius: 50px;
+    background: linear-gradient(135deg, #101D38, #101D38);
+    color: var(--primary);
     cursor: pointer;
-    font-size: 16px;
-    transition: 0.3s;
+    font-size: 15px;
+    font-weight: 700;
+    transition: var(--transition);
 }
 
 .contact button:hover {
-    background-color: #39a879;
+    background: var(--primary);
+    color: var(--bg);
+    box-shadow: 0 0 25px var(--primary);
+    transform: translateY(-4px);
 }
+
 
 /* FOOTER */
 footer {
