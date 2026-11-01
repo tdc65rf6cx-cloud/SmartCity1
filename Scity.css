@@ -449,10 +449,13 @@ header {
 }
 
 
+
 /* STATISTICS */
+
 .statistics {
-    padding: 70px 8%;
+    padding: 95px 8%;
     text-align: center;
+    background: var(--bg);
 }
 
 .stats-container {
@@ -460,27 +463,35 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     gap: 25px;
-    margin-top: 40px;
+    margin-top: 45px;
 }
 
 .stat-box {
-    background-color: #073b35;
-    color: white;
     width: 220px;
     padding: 35px 20px;
-    border-radius: 10px;
-    transition: 0.3s;
+    border: 1px solid rgba(37, 99, 235, 0.25);
+    border-radius: 18px;
+    background: linear-gradient(145deg, #101D38, #060B18);
+    box-shadow: var(--glow-purple);
+    transition: var(--transition);
 }
 
 .stat-box:hover {
-    background-color: #0b6655;
-    transform: scale(1.05);
+    transform: translateY(-10px) scale(1.03);
+    border-color: var(--green);
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.25);
 }
 
 .stat-box h3 {
-    color: #39d98a;
-    font-size: 35px;
+    color: var(--green);
+    font-size: 40px;
     margin-bottom: 10px;
+    text-shadow: 0 0 18px rgba(56, 189, 248, 0.5);
+}
+
+.stat-box p {
+    color: #AABBD4;
+    font-size: 14px;
 }
 
 /* CONTACT */
