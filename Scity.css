@@ -434,6 +434,14 @@ header {
     transform: scale(1.06);
 }
 
+.education {
+    padding: 95px 8%;
+    text-align: center;
+    background:
+        radial-gradient(circle at 50% 100%, rgba(56, 189, 248, 0.1), transparent 45%),
+        #101D38;
+}
+
 
 /* ABOUT */
 
